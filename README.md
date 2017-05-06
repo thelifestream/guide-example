@@ -1,3 +1,20 @@
+# O hai
+
+Links:
+ * [Running locally](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) (OSX only because of reasons :/) (skip step 3, then run `bundle exec jekyll serve`)
+
+Lovecraftian markdown fhtagness from [diversen/lovecraft-complete-cthulhu-mythos](https://github.com/diversen/lovecraft-complete-cthulhu-mythos) <3
+
+TODO: clone the theme, add a list of articles in the sidebar (somewhere in the `<header>` in [default.html](https://github.com/pages-themes/dinky/blob/master/_layouts/default.html) I guess)
+
+# Contents
+TODO: move this to sidebar.
+
+{% for post in site.pages %}
+  [{{post.title}}]({{post.url}})
+{% endfor %}
+
+# example stuffs
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/thelifestream/guide-example/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
