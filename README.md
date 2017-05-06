@@ -11,7 +11,7 @@ TODO: clone the theme, add a list of articles in the sidebar (somewhere in the `
 TODO: move this to sidebar.
 
 {% for post in site.pages %}
-  [{{post.title}}]({{post.url}})
+  [{{post.title}}]({{post.url | remove_first:'/'}})
 {% endfor %}
 
 # example stuffs
